@@ -20,6 +20,7 @@ public class JugTemplate extends WebPage {
 	private Component footerPanel;
 
 	public JugTemplate() {
+		System.out.println("JugTemplate");
 		add(headerPanel = new HeaderPanel("headerPanel"));
 		add(menuPanel = new MenuPanel("menuPanel"));
 		add(footerPanel = new FooterPanel("footerPanel"));
