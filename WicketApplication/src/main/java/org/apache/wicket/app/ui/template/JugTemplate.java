@@ -1,5 +1,6 @@
 package org.apache.wicket.app.ui.template;
 
+import org.apache.wicket.AttributeModifier;
 import org.apache.wicket.Component;
 import org.apache.wicket.app.ui.panel.FooterPanel;
 import org.apache.wicket.app.ui.panel.HeaderPanel;
@@ -21,7 +22,7 @@ public class JugTemplate extends WebPage {
 
 	public JugTemplate() {
 		System.out.println("JugTemplate");
-		add(headerPanel = new HeaderPanel("headerPanel"));
+		add(headerPanel = new HeaderPanel("headerPanel").add(new AttributeModifier("style", "color:red;")));
 		add(menuPanel = new MenuPanel("menuPanel"));
 		add(footerPanel = new FooterPanel("footerPanel"));
 		add(new Label(CONTENT_ID, "Put your content here"));
