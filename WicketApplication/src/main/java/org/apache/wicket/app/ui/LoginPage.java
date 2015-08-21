@@ -17,6 +17,7 @@ public class LoginPage extends JugTemplate {
 		System.out.println("LoginPage");
 		replace(new LoginPanel(CONTENT_ID));
 		getMenuPanel().setVisible(false);
+
 		
 	}
 
